@@ -1,25 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafting Website | Denis Muendo</title>
-    <meta name="description" content="A white water rafting website project for WDD 130.">
-    <meta name="author" content="Denis Muendo">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="White Water Rafting Co. offers guided rafting adventures, scenic river trips, and safety-first fun for every level. Join our newsletter and explore our trips.">
+  <title>White Water Rafting Co. | Home</title>
+  <link rel="stylesheet" href="rafting.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="#">Rafting Website</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Rafting Website</h1>
-        <p>This page will become the white water rafting website project for WDD 130.</p>
-    </main>
-    <footer>
-        <p>&copy; 2026 Denis Muendo</p>
-    </footer>
+  <header>
+    <a href="index.html" class="brand">
+      <img src="images/rafting-hero.jpg" alt="White Water Rafting Co. logo" width="72" height="72">
+      <span>White Water Rafting Co.</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Full-width Hero Image with absolutely positioned heading -->
+    <section class="hero">
+      <img src="images/rafting-hero.jpg" alt="Rafting guide on the river at sunrise" width="1200" height="700">
+      <div class="hero-text">
+        <p class="eyebrow">Adventure Starts Here</p>
+        <h1>Ride the Rapids. Live the Story.</h1>
+        <p>Guided river trips, scenic views, and unforgettable moments for every level of adventurer.</p>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup + Call to Action (CSS grid layout) -->
+    <section class="cta-grid">
+      <article class="card">
+        <h2>Ready for your next river journey?</h2>
+        <p>Explore our trips page to choose the experience that fits your group, comfort level, and thrill goals.</p>
+        <a class="button" href="trips.html">View Trips</a>
+      </article>
+
+      <article class="card">
+        <h2>Join Our Newsletter</h2>
+        <p>Get trip updates, safety tips, and seasonal offers delivered to your inbox.</p>
+        <form class="newsletter-form" action="#" method="post">
+          <label for="news-name">Name</label>
+          <input type="text" id="news-name" name="news-name" placeholder="Your name" required>
+
+          <label for="news-email">Email</label>
+          <input type="email" id="news-email" name="news-email" placeholder="you@example.com" required>
+
+          <button type="submit">Sign Up for Updates</button>
+        </form>
+      </article>
+    </section>
+
+    <!-- Feature Grid: Purpose and Offerings with images (CSS grid) -->
+    <section class="feature-grid">
+      <article class="card feature">
+        <img src="images/morning%20adventure%20snaps.jpeg" alt="Scenic morning rafting adventure" width="600" height="360">
+        <h2>Purposeful Adventure</h2>
+        <p>We design every trip to balance fun, scenery, and safe river guidance so every guest feels confident and inspired. From calm floats to thrilling rapids, there's a perfect journey waiting for you.</p>
+      </article>
+
+      <article class="card feature">
+        <img src="images/Safety%20water%20jackets%20%2Cwaterproofed.jpeg" alt="Safety gear and life jackets ready for the river" width="600" height="360">
+        <h2>Safety and Fun</h2>
+        <p>From pre-trip briefing to rapid navigation, we focus on quality gear, professional leadership, and memorable moments that keep families and friends coming back year after year.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 &#10070; Denis Muendo &#10070; Nairobi, Kenya</p>
+    <nav class="sociallinks">
+      <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook" width="32" height="32"></a>
+      <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram" width="32" height="32"></a>
+      <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn" width="32" height="32"></a>
+    </nav>
+  </footer>
 </body>
+
 </html>
